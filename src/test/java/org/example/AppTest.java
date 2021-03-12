@@ -66,12 +66,12 @@ public class AppTest {
         driver.findElement(By.id("repository_gitignore_template_toggle")).click();
         driver.findElement(By.xpath("//*[@id=\"new_repository\"]/div[6]/div[4]/div[2]/span[2]/details/summary")).click();
         driver.findElement(By.xpath("//*[@id=\"new_repository\"]/div[6]/div[4]/div[2]/span[2]/details/details-menu/div[3]/div[1]/label[52]")).click();
-        driver.findElement(By.cssSelector("[class=\"btn btn-primary first-in-line\"]")).click();
+        driver.findElement(By.xpath("//*[@id=\"new_repository\"]/div[6]/button")).click();
     }
 
     private void addReadMeFile() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"repo-content-pjax-container\"]/div/div[2]/div[1]/div[4]/a")));
-        driver.findElement(By.cssSelector("[href=\"/SerhiiHladkyi/TestRepository/new/main?readme=1\"]")).click();
+        driver.findElement(By.xpath("//*[@id=\"repo-content-pjax-container\"]/div/div[2]/div[1]/div[4]/a")).click();
         WebElement editForm = driver.findElement(By.xpath("//*[@id=\"repo-content-pjax-container\"]/div/form[2]/div/file-attachment/div/div[2]/div/div/div[5]/div[1]/div/div/div/div[5]/div/pre/span"));
         editForm.click();
         editForm.click();

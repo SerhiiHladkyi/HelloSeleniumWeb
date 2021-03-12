@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="HelloSeleniumWeb" />
+        <module name="HelloSelenium" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="HelloSelenium" target="8" />
       <module name="HelloSeleniumWeb" target="8" />
     </bytecodeTargetLevel>
   </component>
